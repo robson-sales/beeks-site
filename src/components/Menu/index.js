@@ -12,36 +12,39 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="navbar">
-      <div className="container">
-        <div className="logo">
-          <NavLink to="/">
-            <img src={logo} alt="Logo" />
-          </NavLink>
+    <>
+      <nav className="navbar">
+        <div className="container">
+          <div className="logo">
+            <NavLink to="/">
+              <img src={logo} alt="Logo" />
+            </NavLink>
+          </div>
+          <div className="menu-icon" onClick={handleShowNavbar}>
+            <NavLink>
+              <img src={hamburguer} alt="Logo" />
+            </NavLink>
+          </div>
+          <div className={`nav-elements  ${showNavbar && 'active'}`}>
+            <ul>
+              <li>
+                <NavLink to="/quem-somos">quem somos</NavLink>
+              </li>
+              <li>
+                <NavLink to="/solucoes-nuvem">soluções nuvem</NavLink>
+              </li>
+              <li>
+                <NavLink to="/produtos">produtos</NavLink>
+              </li>
+              <li>
+                <NavLink to="/contato">contato</NavLink>
+              </li>
+            </ul>
+          </div>
         </div>
-        <div className="menu-icon" onClick={handleShowNavbar}>
-          <NavLink>
-            <img src={hamburguer} alt="Logo" />
-          </NavLink>
-        </div>
-        <div className={`nav-elements  ${showNavbar && 'active'}`}>
-          <ul>
-            <li>
-              <NavLink to="/quem-somos">Quem somos</NavLink>
-            </li>
-            <li>
-              <NavLink to="/solucoes-nuvem">Soluções Nuvem</NavLink>
-            </li>
-            <li>
-              <NavLink to="/produtos">Produtos</NavLink>
-            </li>
-            <li>
-              <NavLink to="/contato">Contato</NavLink>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
+      </nav>
+      <div className="nav-padding"></div>
+    </>
   );
 };
 
