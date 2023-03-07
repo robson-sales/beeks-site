@@ -1,6 +1,8 @@
 import { useState } from 'react';
 import { NavLink } from 'react-router-dom';
 import './style.css';
+import logo from '../../assets/images/logo.png';
+import hamburguer from '../../assets/images/hamburguer.png';
 
 const Navbar = () => {
   const [showNavbar, setShowNavbar] = useState(false);
@@ -14,12 +16,12 @@ const Navbar = () => {
       <div className="container">
         <div className="logo">
           <NavLink to="/">
-            <img src="../../../images/logo.png" alt="Logo" />
+            <img src={logo} alt="Logo" />
           </NavLink>
         </div>
         <div className="menu-icon" onClick={handleShowNavbar}>
           <NavLink>
-            <img src="../../../images/hamburguer.png" alt="Logo" />
+            <img src={hamburguer} alt="Logo" />
           </NavLink>
         </div>
         <div className={`nav-elements  ${showNavbar && 'active'}`}>

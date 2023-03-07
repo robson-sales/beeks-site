@@ -5,6 +5,7 @@ import './Styles/global.css';
 
 import Navbar from './components/Menu';
 import QuemSomos from './components/QuemSomos';
+import Home from './components/Home';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -12,7 +13,7 @@ root.render(
     <BrowserRouter>
       <Navbar />
       <Routes>
-        <Route path="/" element={<div>Home</div>} />
+        <Route path="/" element={<Home />} />
         <Route path="/quem-somos" element={<QuemSomos />} />
         <Route path="/solucoes-nuvem" element={<div>Soluções Nuvem</div>} />
         <Route path="/produtos" element={<div>Produtos</div>} />
