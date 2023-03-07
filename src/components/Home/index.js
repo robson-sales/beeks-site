@@ -14,6 +14,9 @@ const Home = () => (
         era digital <br /> <br />A parte nerd 🤓
         <br />é com a gente
       </h2>
+      <br />
+      <br />
+      <button type="submit">Fale com a gente</button>
     </div>
   </div>
 );

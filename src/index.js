@@ -6,6 +6,7 @@ import './Styles/global.css';
 import Navbar from './components/Menu';
 import QuemSomos from './components/QuemSomos';
 import Home from './components/Home';
+import Footer from './components/Footer';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -19,6 +20,7 @@ root.render(
         <Route path="/produtos" element={<div>Produtos</div>} />
         <Route path="/contato" element={<div>Contato</div>} />
       </Routes>
+      <Footer />
     </BrowserRouter>
   </React.StrictMode>
 );

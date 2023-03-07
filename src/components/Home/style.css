@@ -18,6 +18,42 @@
   color: white;
 }
 
+button {
+  width: 300px;
+  height: 40px;
+  background-color: var(--blue-beek);
+  border: none;
+  border-radius: 10px;
+  font-family: 'League Spartan', sans-serif;
+  font-size: 1.7rem;
+  font-weight: bold;
+  color: white;
+  cursor: pointer;
+}
+
+button:hover{
+  background-color: blue;
+}
+
+@media (max-width: 1000px) {
+  .text-over-left {
+    top: 4.5rem;
+    left: 4.5rem;
+    font-size: 2rem;
+  }
+
+  .banner-img {
+    overflow: hidden;
+    margin: 0 0 0 -460px;
+  }
+
+  .banner-img img {
+    display: block;
+    width: auto;
+    height: 900px;
+  }
+}
+
 @media (max-width: 700px) {
   .text-over-left {
     top: 3rem;
@@ -33,6 +69,6 @@
   .banner-img img {
     display: block;
     width: auto;
-    height: 900px;
+    height: 800px;
   }
 }
