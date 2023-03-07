@@ -1,0 +1,29 @@
+:root {
+  /* altura do menu */
+  --menu-height: 50px;
+  --blue-beek: #5271FF;
+  --gray-beek: #A6A6A6;
+  --menu-color: white;
+  --font-color: grey;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  font-size: 1.4rem;
+  color: var(--font-color);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
