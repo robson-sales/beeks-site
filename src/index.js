@@ -10,6 +10,7 @@ import Footer from './components/Footer';
 import Contato from './components/Contato';
 import Produtos from './components/Produtos';
 import Solucoes from './components/Solucoes';
+import NotFound from './components/NotFound';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -22,6 +23,7 @@ root.render(
         <Route path="/solucoes-nuvem" element={<Solucoes />} />
         <Route path="/produtos" element={<Produtos />} />
         <Route path="/contato" element={<Contato />} />
+        <Route path="*" element={<NotFound />} />
       </Routes>
       <Footer />
     </BrowserRouter>

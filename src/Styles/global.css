@@ -3,8 +3,8 @@
 
 
 :root {
-  /* altura do menu */
-  --menu-height: 50px;
+  --menu-height: 5rem;
+  --footer-height: 7rem;
   --blue-beek: #5271FF;
   --gray-beek: #A6A6A6;
   --menu-color: white;

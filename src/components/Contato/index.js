@@ -1,6 +1,5 @@
 import './style.css';
 import contact from '../../assets/images/contact.jpg';
-import wap from '../../assets/images/wap.png';
 
 export default function Contato() {
   return (
@@ -15,11 +14,6 @@ export default function Contato() {
             <br />
             <p>Descubra como podemos ajudar a potencializar seu negócio.</p>
             <br />
-            <p></p>
-            <p>☎️ (11) 5555-1234</p>
-            <p>
-              <img src={wap} className="icon" /> (11) 9999-2345
-            </p>
             <p>
               ✉️ <a href="mailto:contato@beeks.com.br">contato@beeks.com.br</a>
             </p>

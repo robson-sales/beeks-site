@@ -4,7 +4,7 @@
   justify-content: center;
   text-align: center;
   align-content: center;
-  height: 7rem;
+  height: var(--footer-height);
   font-size: 1.3rem;
   background: var(--blue-beek);
   color: white;
