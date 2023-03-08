@@ -1,0 +1,40 @@
+.contact {
+  align-items: center;
+  justify-content: center;
+  background-image: url('../../assets/images/background.svg');
+  background-size:cover;
+}
+
+.contact-content {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+}
+
+.contact-content-txt {
+  padding: 6rem;
+}
+
+.contact-content-img {
+  width: 100%;
+  height: auto;
+}
+
+.contact-content-img img {
+  width: 100%;
+}
+
+.icon {
+  width: 25px;
+}
+
+@media (max-width: 700px) {
+  .contact-content {
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+  }
+}

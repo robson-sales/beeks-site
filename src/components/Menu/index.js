@@ -4,7 +4,7 @@ import './style.css';
 import logo from '../../assets/images/logo.png';
 import hamburguer from '../../assets/images/hamburguer.png';
 
-const Navbar = () => {
+export default function Navbar() {
   const [showNavbar, setShowNavbar] = useState(false);
 
   const handleShowNavbar = () => {
@@ -46,6 +46,4 @@ const Navbar = () => {
       <div className="nav-padding"></div>
     </>
   );
-};
-
-export default Navbar;
+}
