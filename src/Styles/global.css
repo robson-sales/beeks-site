@@ -4,7 +4,7 @@
 
 :root {
   --menu-height: 5rem;
-  --footer-height: 5rem;
+  --footer-height: 3rem;
   --util-height: calc(100vh - var(--menu-height) - var(--footer-height));
   --blue-beek: #5271FF;
   --gray-beek: #A6A6A6;
