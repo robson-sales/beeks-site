@@ -7,9 +7,11 @@
 
 .contact-content {
   width: 100%;
+  height: var(--util-height);
   display: grid;
   grid-template-columns: 1fr 1fr;
   align-items: center;
+  justify-content: center;
 }
 
 .contact-content-txt {
@@ -17,12 +19,16 @@
 }
 
 .contact-content-img {
+  display: flex;
   width: 100%;
-  height: auto;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+  overflow:hidden;
 }
 
 .contact-content-img img {
-  width: 100%;
+  height: 130%;
 }
 
 .icon {
@@ -31,10 +37,18 @@
 
 @media (max-width: 700px) {
   .contact-content {
-    display: grid;
     grid-template-columns: 1fr;
+    }
+
+  .contact-content-img {
+    display: flex;
     align-items: center;
+    justify-content: center;
+    overflow:hidden;
+  }
+
+  .contact-content-img img {
     width: 100%;
-    height: 100%;
+    height: auto;
   }
 }
