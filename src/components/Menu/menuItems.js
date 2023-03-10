@@ -9,11 +9,17 @@ export const menuItems = [
   },
   {
     title: 'produtos',
-    url: '/produtos',
-    subitems: {
-      title: 'produto 1',
-      url: '/prod-1',
-    },
+    url: '',
+    subItems: [
+      {
+        title: 'influencer',
+        url: '',
+      },
+      {
+        title: 'produto 2',
+        url: '/prod-2',
+      },
+    ],
   },
   {
     title: 'contato',

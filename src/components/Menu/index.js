@@ -6,6 +6,7 @@ import { menuItems } from './menuItems';
 import logo from '../../assets/images/logo.png';
 import hamburguer from '../../assets/images/hamburguer.svg';
 import close from '../../assets/images/close.svg';
+import Dropdown from './Dropdown';
 
 export default function Navbar() {
   const [showNavbar, setShowNavbar] = useState(false);
@@ -17,42 +18,34 @@ export default function Navbar() {
   return (
     <>
       <nav className="navbar">
-        {/* Logotipo */}
         <div className="logo">
           <NavLink to="/">
             <img src={logo} alt="Logo" />
           </NavLink>
         </div>
-        {/* Ícone do menu hamburger */}
         <div className="menu-icon" onClick={handleShowNavbar}>
           <NavLink>
             <img src={showNavbar ? close : hamburguer} alt="Logo" />
           </NavLink>
         </div>
-        {/* Elementos do menu */}
         <div className={`menu-container  ${showNavbar && 'active'}`}>
           <ul className="menu-list">
-            {menuItems.map((currElement, index) => (
+            {menuItems.map((menuItem, index) => (
               <li className="menu-item" key={index}>
                 <NavLink
-                  to={currElement.url}
+                  to={menuItem.url}
                   onClick={handleShowNavbar}
                   key={index}
+                  className="menu-item-link"
                 >
-                  {currElement.title}
+                  {menuItem.title}
                 </NavLink>
-                {/* Elementos do submenu */}
-                <ul className="submenu-list">
-                  <li className="submenu-item">
-                    <NavLink to="/">home</NavLink>
-                  </li>
-                </ul>
+                {'subItems' in menuItem && <Dropdown menuItem={menuItem} />}
               </li>
             ))}
           </ul>
         </div>
       </nav>
-      {/* Navbar falsa para dar padding no menu */}
       <div className="nav-padding"></div>
     </>
   );
