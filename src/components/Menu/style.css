@@ -4,6 +4,18 @@ body {
   color: var(--font-color);
 }
 
+/* 
+navbar 
+ |_ logo
+ |_ menu-icon
+ |_ menu-container
+    |_ menu-list
+        |_ menu-item
+            |_ menu-item-link
+            |_ submenu-list
+                |_ submenu-item ]
+*/
+
 .navbar {
   width: 100%;
   height: var(--menu-height);
@@ -45,8 +57,50 @@ body {
   display: flex;
   align-items: center;
   position: relative;
-  padding-left: 5px;
-  padding-right: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.menu-item:hover .submenu-list {
+  display: block;
+}
+
+.menu-item-link {
+  font-size: 2rem;
+  font-weight: 400;
+  color: var(--font-color);
+  text-decoration: none;
+  text-align: center;
+  display: block;
+  padding: 1rem;
+  color: var(--primary-color);
+  position: relative;
+}
+
+.menu-item:not(:last-child):not(:last-child) {
+  margin-right: 0px;
+}
+
+.menu-item-link.active {
+  color: var(--blue-beek);
+  font-weight: 500;
+  position: relative;
+}
+
+.menu-item-link::after {
+  content: '';
+  position: absolute;
+  bottom: 0.6rem;
+  left: 50%;
+  width: 0;
+  height: 0.2rem;
+  background: var(--blue-beek);
+  transition: all 300ms ease-in-out;
+}
+
+.menu-item-link:hover::after {
+  width: 50%;
+  left: 25%;
 }
 
 .submenu-list {
@@ -66,51 +120,16 @@ body {
   display: none;
 }
 
-.menu-item:hover .submenu-list {
-  display: block;
-}
-
-.menu-item a {
-  font-size: 2rem;
-  font-weight: 400;
-  color: var(--font-color);
-  text-decoration: none;
-  text-align: center;
-  display: block;
-  padding: 1rem;
-  color: var(--primary-color);
-  position: relative;
-}
-
-.menu-item:not(:last-child):not(:last-child) {
-  margin-right: 0px;
-}
-
-.menu-item a.active {
-  color: var(--blue-beek);
-  font-weight: 500;
-  position: relative;
-}
-
-.menu-item a::after {
-  content: '';
-  position: absolute;
-  bottom: 0.6rem;
-  left: 50%;
-  width: 0;
-  height: 0.2rem;
-  background: var(--blue-beek);
-  transition: all 300ms ease-in-out;
-}
-
-.menu-item a:hover::after {
-  width: 50%;
-  left: 25%;
+.submenu-item {
+  padding: 5px;
 }
 
 .submenu-item a {
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   text-align: left;
+  text-decoration: none;
+  font-weight: 400;
+  color: var(--font-color);
 }
 
 @media (max-width: 700px) {

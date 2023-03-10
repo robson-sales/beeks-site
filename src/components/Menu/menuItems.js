@@ -1,28 +1,38 @@
 export const menuItems = [
   {
-    title: 'quem somos',
+    title: 'Quem somos',
     url: '/quem-somos',
   },
   {
-    title: 'soluções nuvem',
-    url: '/solucoes-nuvem',
-  },
-  {
-    title: 'produtos',
+    title: 'Soluções nuvem',
     url: '',
     subItems: [
       {
-        title: 'influencer',
+        title: 'AWS',
         url: '',
       },
       {
-        title: 'produto 2',
-        url: '/prod-2',
+        title: 'Google Cloud',
+        url: '',
+      },
+      {
+        title: 'Google Workplace',
+        url: '',
       },
     ],
   },
   {
-    title: 'contato',
+    title: 'Produtos',
+    url: '',
+    subItems: [
+      {
+        title: 'App Influencer 🚧',
+        url: '',
+      },
+    ],
+  },
+  {
+    title: 'Contato',
     url: '/contato',
   },
 ];

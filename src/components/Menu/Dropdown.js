@@ -15,9 +15,6 @@ export default function Dropdown({ menuItem }) {
           </NavLink>
         </li>
       ))}
-      <li className="submenu-item">
-        <NavLink to="/">home1</NavLink>
-      </li>
     </ul>
   );
 }
