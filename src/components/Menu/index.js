@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { NavLink } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 import './style.css';
 import { menuItems } from './menuItems';
@@ -19,27 +19,27 @@ export default function Navbar() {
     <>
       <nav className="navbar">
         <div className="logo">
-          <NavLink to="/">
+          <Link to="/">
             <img src={logo} alt="Logo" />
-          </NavLink>
+          </Link>
         </div>
         <div className="menu-icon" onClick={handleShowNavbar}>
-          <NavLink>
+          <Link>
             <img src={showNavbar ? close : hamburguer} alt="Logo" />
-          </NavLink>
+          </Link>
         </div>
         <div className={`menu-container  ${showNavbar && 'active'}`}>
           <ul className="menu-list">
             {menuItems.map((menuItem, index) => (
               <li className="menu-item" key={index}>
-                <NavLink
+                <Link
                   to={menuItem.url}
                   onClick={handleShowNavbar}
                   key={index}
                   className="menu-item-link"
                 >
                   {menuItem.title}
-                </NavLink>
+                </Link>
                 {'subItems' in menuItem && <Dropdown menuItem={menuItem} />}
               </li>
             ))}
