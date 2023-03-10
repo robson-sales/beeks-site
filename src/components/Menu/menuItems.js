@@ -9,15 +9,15 @@ export const menuItems = [
     subItems: [
       {
         title: 'AWS',
-        url: '',
+        url: '/solucoes-nuvem/aws',
       },
       {
         title: 'Google Cloud',
-        url: '',
+        url: '/solucoes-nuvem/gcp',
       },
       {
         title: 'Google Workplace',
-        url: '',
+        url: '/solucoes-nuvem/google-workplace',
       },
     ],
   },

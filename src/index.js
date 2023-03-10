@@ -8,9 +8,10 @@ import QuemSomos from './components/QuemSomos';
 import Home from './components/Home';
 import Footer from './components/Footer';
 import Contato from './components/Contato';
-import Produtos from './components/Produtos';
-import Solucoes from './components/Solucoes';
 import NotFound from './components/NotFound';
+import PageAws from './components/PageAws';
+import PageGcp from './components/PageGCP';
+import PageGW from './components/PageGoogleWork';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -20,8 +21,9 @@ root.render(
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/quem-somos" element={<QuemSomos />} />
-        <Route path="/solucoes-nuvem" element={<Solucoes />} />
-        <Route path="/produtos" element={<Produtos />} />
+        <Route path="/solucoes-nuvem/gcp" element={<PageGcp />} />
+        <Route path="/solucoes-nuvem/aws" element={<PageAws />} />
+        <Route path="/solucoes-nuvem/google-workplace" element={<PageGW />} />
         <Route path="/contato" element={<Contato />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
