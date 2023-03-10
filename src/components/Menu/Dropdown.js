@@ -11,9 +11,9 @@ export default function Dropdown() {
   console.log(subitems);
 
   return (
-    <ul className="nav-elements-subitems">
-      <li>
-        <NavLink to={subitems.url}>{subitems.title}</NavLink>
+    <ul className="submenu-list">
+      <li className="submenu-item">
+        <NavLink to="/">home</NavLink>
       </li>
     </ul>
   );

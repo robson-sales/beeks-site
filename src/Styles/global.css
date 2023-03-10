@@ -4,6 +4,7 @@
 
 :root {
   --menu-height: 5rem;
+  --lateral-menu: 270px;
   --footer-height: 3rem;
   --util-height: calc(100vh - var(--menu-height) - var(--footer-height));
   --blue-beek: #5271FF;

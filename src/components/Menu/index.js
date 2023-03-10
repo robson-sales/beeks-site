@@ -41,6 +41,12 @@ export default function Navbar() {
                 >
                   {currElement.title}
                 </NavLink>
+                {/* Elementos do submenu */}
+                <ul className="submenu-list">
+                  <li className="submenu-item">
+                    <NavLink to="/">home</NavLink>
+                  </li>
+                </ul>
               </li>
             ))}
           </ul>
