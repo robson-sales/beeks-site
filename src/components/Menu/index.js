@@ -31,10 +31,10 @@ export default function Navbar() {
             </NavLink>
           </div>
           {/* Elementos do menu */}
-          <div className={`nav-elements  ${showNavbar && 'active'}`}>
-            <ul>
+          <div className={`menu-container  ${showNavbar && 'active'}`}>
+            <ul className="menu-list">
               {menuItems.map((currElement, index) => (
-                <li className="nav-element-root" key={index}>
+                <li className="menu-item" key={index}>
                   <NavLink
                     to={currElement.url}
                     onClick={handleShowNavbar}
