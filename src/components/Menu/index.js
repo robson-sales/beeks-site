@@ -17,35 +17,33 @@ export default function Navbar() {
   return (
     <>
       <nav className="navbar">
-        <div className="container">
-          {/* Logotipo */}
-          <div className="logo">
-            <NavLink to="/">
-              <img src={logo} alt="Logo" />
-            </NavLink>
-          </div>
-          {/* Ícone do menu hamburger */}
-          <div className="menu-icon" onClick={handleShowNavbar}>
-            <NavLink>
-              <img src={showNavbar ? close : hamburguer} alt="Logo" />
-            </NavLink>
-          </div>
-          {/* Elementos do menu */}
-          <div className={`menu-container  ${showNavbar && 'active'}`}>
-            <ul className="menu-list">
-              {menuItems.map((currElement, index) => (
-                <li className="menu-item" key={index}>
-                  <NavLink
-                    to={currElement.url}
-                    onClick={handleShowNavbar}
-                    key={index}
-                  >
-                    {currElement.title}
-                  </NavLink>
-                </li>
-              ))}
-            </ul>
-          </div>
+        {/* Logotipo */}
+        <div className="logo">
+          <NavLink to="/">
+            <img src={logo} alt="Logo" />
+          </NavLink>
+        </div>
+        {/* Ícone do menu hamburger */}
+        <div className="menu-icon" onClick={handleShowNavbar}>
+          <NavLink>
+            <img src={showNavbar ? close : hamburguer} alt="Logo" />
+          </NavLink>
+        </div>
+        {/* Elementos do menu */}
+        <div className={`menu-container  ${showNavbar && 'active'}`}>
+          <ul className="menu-list">
+            {menuItems.map((currElement, index) => (
+              <li className="menu-item" key={index}>
+                <NavLink
+                  to={currElement.url}
+                  onClick={handleShowNavbar}
+                  key={index}
+                >
+                  {currElement.title}
+                </NavLink>
+              </li>
+            ))}
+          </ul>
         </div>
       </nav>
       {/* Navbar falsa para dar padding no menu */}

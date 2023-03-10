@@ -7,20 +7,15 @@ body {
 .navbar {
   width: 100%;
   height: var(--menu-height);
+  display: flex;
   position: fixed;
-  z-index: 1;
-  background-color: var(--menu-color);
-  box-shadow: 1px 1px 10px 1px var(--gray-beek);
-}
-
-.container {
-  width: 100%;
-  height: 100%;
   margin: 0 auto;
   padding: 0 3rem;
-  display: flex;
+  z-index: 1;
   align-items: center;
   justify-content: space-between;
+  background-color: var(--menu-color);
+  box-shadow: 1px 1px 10px 1px var(--gray-beek);
 }
 
 .nav-padding {
@@ -45,16 +40,6 @@ body {
   list-style-type: none;
 }
 
-.menu-item:not(:last-child):not(:last-child) {
-  margin-right: 10px;
-}
-
-.menu-item a.active {
-  color: var(--blue-beek);
-  font-weight: 500;
-  position: relative;
-}
-
 .menu-item a {
   font-size: 2rem;
   font-weight: 400;
@@ -64,6 +49,16 @@ body {
   display: block;
   padding: 1rem;
   color: var(--primary-color);
+  position: relative;
+}
+
+.menu-item:not(:last-child):not(:last-child) {
+  margin-right: 10px;
+}
+
+.menu-item a.active {
+  color: var(--blue-beek);
+  font-weight: 500;
   position: relative;
 }
 
