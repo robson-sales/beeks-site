@@ -3,7 +3,7 @@
   align-items: center;
   justify-content: center;
   flex-direction: row;
-  background-image: url('../../assets/images/background.svg');
+  background-image: url('../assets/images/background.svg');
   background-size:cover;
 }
 
@@ -16,6 +16,9 @@
 }
 
 .section-gw-content-txt {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   padding: 2rem;
 }
 .section-gw-content-txt p {

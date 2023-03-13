@@ -1,5 +1,5 @@
 import { useNavigate } from 'react-router-dom';
-import './style.css';
+import '../../Styles/solutionStyle.css';
 import awsLogo from '../../assets/images/aws-logo.png';
 import awsServers from '../../assets/images/aws-server.png';
 import awsServices from '../../assets/images/aws-services.png';
@@ -20,13 +20,13 @@ export default function PageAws() {
           </div>
           <div className="section-gw-content-txt">
             <p>
-              A Amazon Web Services (AWS) é uma plataforma de computação em
-              nuvem oferecida pela Amazon, que fornece uma ampla gama de
-              serviços de infraestrutura de TI, como armazenamento de dados,
-              processamento de dados, hospedagem de sites, análise de dados e
-              muito mais. A AWS é uma das plataformas de nuvem mais populares do
-              mundo e é utilizada por empresas de todos os tamanhos para
-              otimizar seus negócios.
+              A <strong>Amazon Web Services (AWS)</strong> é uma plataforma de
+              computação em nuvem oferecida pela Amazon, que fornece uma ampla
+              gama de serviços de infraestrutura de TI, como armazenamento de
+              dados, processamento de dados, hospedagem de sites, análise de
+              dados e muito mais. A AWS é uma das plataformas de nuvem mais
+              populares do mundo e é utilizada por empresas de todos os tamanhos
+              para otimizar seus negócios.
             </p>
 
             <p>
@@ -87,6 +87,9 @@ export default function PageAws() {
                 business, enquanto a plataforma gerencia a infraestrutura de TI
                 de maneira eficiente e confiável.
               </strong>
+            </p>
+            <p>
+              <strong>Quer saber mais sobre como a AWS pode te ajudar?</strong>
             </p>
             <br />
             <button type="submit" onClick={handleContact}>

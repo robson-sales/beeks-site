@@ -9,9 +9,9 @@ import Home from './components/Home';
 import Footer from './components/Footer';
 import Contato from './components/Contato';
 import NotFound from './components/NotFound';
-import PageAws from './components/PageAws';
-import PageGcp from './components/PageGCP';
-import PageGW from './components/PageGoogleWork';
+import SolutionAws from './components/SolutionAws';
+import SolutionGcp from './components/SolutionGCP';
+import SolutionGW from './components/SolutionGoogleWork';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -21,9 +21,12 @@ root.render(
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/quem-somos" element={<QuemSomos />} />
-        <Route path="/solucoes-nuvem/gcp" element={<PageGcp />} />
-        <Route path="/solucoes-nuvem/aws" element={<PageAws />} />
-        <Route path="/solucoes-nuvem/google-workplace" element={<PageGW />} />
+        <Route path="/solucoes-nuvem/gcp" element={<SolutionGcp />} />
+        <Route path="/solucoes-nuvem/aws" element={<SolutionAws />} />
+        <Route
+          path="/solucoes-nuvem/google-workplace"
+          element={<SolutionGW />}
+        />
         <Route path="/contato" element={<Contato />} />
         <Route path="*" element={<NotFound />} />
       </Routes>

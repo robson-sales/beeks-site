@@ -1,5 +1,5 @@
 import { useNavigate } from 'react-router-dom';
-import './style.css';
+import '../../Styles/solutionStyle.css';
 import workplace from '../../assets/images/google-workspace.png';
 import screen from '../../assets/images/workspace_motion_still.jpg';
 import illustration from '../../assets/images/google-workspace-illustration.jpg';

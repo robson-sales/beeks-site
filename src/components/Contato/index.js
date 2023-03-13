@@ -13,6 +13,7 @@ export default function Contato() {
             <h2>Contato</h2>
             <br />
             <p>Descubra como podemos ajudar a potencializar seu negócio.</p>
+            <p>Teremos prazer em te ouvir e responder suas dúvidas.</p>
             <br />
             <p>
               ✉️ <a href="mailto:contato@beeks.com.br">contato@beeks.com.br</a>
