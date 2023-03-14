@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import React from 'react';
 import { Link } from 'react-router-dom';
 
 import './style.css';
@@ -8,60 +8,75 @@ import hamburguer from '../../assets/images/hamburguer.svg';
 import close from '../../assets/images/close.svg';
 import Dropdown from './Dropdown';
 
-export default function Navbar() {
-  const [showNavbar, setShowNavbar] = useState(false);
+export default class Navbar extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = { showNavbar: false };
+    this.handleShowNavbar = this.handleShowNavbar.bind(this);
+    this.handleShowSubItems = this.handleShowSubItems.bind(this);
+  }
 
-  const handleShowNavbar = () => {
-    setShowNavbar(!showNavbar);
-    console.log(showNavbar);
+  handleShowNavbar = () => {
+    this.setState({
+      showNavbar: !this.state.showNavbar,
+    });
   };
 
-  const handleShowSubItems = () => {
-    console.log('Sub-Itens');
+  handleShowSubItems = () => {
+    console.log(this.state.showNavbar);
   };
 
-  return (
-    <>
-      <nav className="navbar">
-        <div className="logo">
-          <Link to="/">
-            <img src={logo} alt="Logo" />
-          </Link>
-        </div>
-        <div className="menu-icon" onClick={handleShowNavbar}>
-          <Link>
-            <img src={showNavbar ? close : hamburguer} alt="Logo" />
-          </Link>
-        </div>
-        <div className={`menu-container  ${showNavbar && 'active'}`}>
-          <ul className="menu-list">
-            {menuItems.map((menuItem, index) => (
-              <li className="menu-item" key={index}>
-                {'subItems' in menuItem ? (
-                  <p
-                    key={index}
-                    onClick={handleShowSubItems}
-                    className="menu-item-link"
-                  >
-                    {menuItem.title}
-                  </p>
-                ) : (
-                  <Link
-                    to={menuItem.url}
-                    key={index}
-                    className="menu-item-link"
-                  >
-                    {menuItem.title}
-                  </Link>
-                )}
-                {/* Atualizar o handleShowNavbar para fechar o menu quando clicar em subitem */}
-                {'subItems' in menuItem && <Dropdown menuItem={menuItem} />}
-              </li>
-            ))}
-          </ul>
-        </div>
-      </nav>
-      <div className="nav-padding"></div>
-    </>
-  );
+  render() {
+    return (
+      <>
+        <nav className="navbar">
+          <div className="logo">
+            <Link to="/">
+              <img src={logo} alt="Logo" />
+            </Link>
+          </div>
+          <div className="menu-icon" onClick={this.handleShowNavbar}>
+            <Link>
+              <img
+                src={this.state.showNavbar ? close : hamburguer}
+                alt="Logo"
+              />
+            </Link>
+          </div>
+          <div
+            className={`menu-container  ${this.state.showNavbar && 'active'}`}
+          >
+            <ul className="menu-list">
+              {menuItems.map((menuItem, index) => (
+                <li className="menu-item" key={index}>
+                  {'subItems' in menuItem ? (
+                    <p
+                      key={index}
+                      onClick={this.handleShowSubItems}
+                      className="menu-item-link"
+                    >
+                      {menuItem.title}
+                    </p>
+                  ) : (
+                    <Link
+                      to={menuItem.url}
+                      key={index}
+                      className="menu-item-link"
+                      onClick={this.handleShowNavbar}
+                    >
+                      {menuItem.title}
+                    </Link>
+                  )}
+                  {'subItems' in menuItem && (
+                    <Dropdown menuItem={menuItem.subItems} />
+                  )}
+                </li>
+              ))}
+            </ul>
+          </div>
+        </nav>
+        <div className="nav-padding"></div>
+      </>
+    );
+  }
 }
