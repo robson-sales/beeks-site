@@ -13,6 +13,11 @@ export default function Navbar() {
 
   const handleShowNavbar = () => {
     setShowNavbar(!showNavbar);
+    console.log(showNavbar);
+  };
+
+  const handleShowSubItems = () => {
+    console.log('Sub-Itens');
   };
 
   return (
@@ -32,14 +37,23 @@ export default function Navbar() {
           <ul className="menu-list">
             {menuItems.map((menuItem, index) => (
               <li className="menu-item" key={index}>
-                <Link
-                  to={menuItem.url}
-                  onClick={handleShowNavbar}
-                  key={index}
-                  className="menu-item-link"
-                >
-                  {menuItem.title}
-                </Link>
+                {'subItems' in menuItem ? (
+                  <p
+                    key={index}
+                    onClick={handleShowSubItems}
+                    className="menu-item-link"
+                  >
+                    {menuItem.title}
+                  </p>
+                ) : (
+                  <Link
+                    to={menuItem.url}
+                    key={index}
+                    className="menu-item-link"
+                  >
+                    {menuItem.title}
+                  </Link>
+                )}
                 {/* Atualizar o handleShowNavbar para fechar o menu quando clicar em subitem */}
                 {'subItems' in menuItem && <Dropdown menuItem={menuItem} />}
               </li>
