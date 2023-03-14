@@ -11,13 +11,15 @@ export default class Dropdown extends React.Component {
   }
 
   render() {
-    // console.log('Dropdown: ', this.props);
-
     return (
       <ul className="submenu-list">
         {this.props.menuItem.map((submenuItem, index) => (
           <li className="submenu-item" key={index}>
-            <Link to={submenuItem.url} key={index}>
+            <Link
+              to={submenuItem.url}
+              key={index}
+              onClick={this.props.showNavbar}
+            >
               {submenuItem.title}
             </Link>
           </li>
@@ -29,4 +31,5 @@ export default class Dropdown extends React.Component {
 
 Dropdown.propTypes = {
   menuItem: PropTypes.array.isRequired,
+  showNavbar: PropTypes.func.isRequired,
 };

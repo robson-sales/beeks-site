@@ -13,17 +13,12 @@ export default class Navbar extends React.Component {
     super(props);
     this.state = { showNavbar: false };
     this.handleShowNavbar = this.handleShowNavbar.bind(this);
-    this.handleShowSubItems = this.handleShowSubItems.bind(this);
   }
 
   handleShowNavbar = () => {
     this.setState({
       showNavbar: !this.state.showNavbar,
     });
-  };
-
-  handleShowSubItems = () => {
-    console.log(this.state.showNavbar);
   };
 
   render() {
@@ -50,11 +45,7 @@ export default class Navbar extends React.Component {
               {menuItems.map((menuItem, index) => (
                 <li className="menu-item" key={index}>
                   {'subItems' in menuItem ? (
-                    <p
-                      key={index}
-                      onClick={this.handleShowSubItems}
-                      className="menu-item-link"
-                    >
+                    <p key={index} className="menu-item-link">
                       {menuItem.title}
                     </p>
                   ) : (
@@ -68,7 +59,10 @@ export default class Navbar extends React.Component {
                     </Link>
                   )}
                   {'subItems' in menuItem && (
-                    <Dropdown menuItem={menuItem.subItems} />
+                    <Dropdown
+                      menuItem={menuItem.subItems}
+                      showNavbar={this.handleShowNavbar}
+                    />
                   )}
                 </li>
               ))}
