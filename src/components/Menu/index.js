@@ -40,6 +40,7 @@ export default function Navbar() {
                 >
                   {menuItem.title}
                 </Link>
+                {/* Atualizar o handleShowNavbar para fechar o menu quando clicar em subitem */}
                 {'subItems' in menuItem && <Dropdown menuItem={menuItem} />}
               </li>
             ))}
