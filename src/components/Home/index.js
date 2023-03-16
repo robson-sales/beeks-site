@@ -12,7 +12,10 @@ export default function Home() {
   return (
     <div className="banner">
       <div className="banner-img">
-        <img src={banner} />
+        <img
+          src={banner}
+          alt="Uma mulher trabalhando segurando um smartphone"
+        />
       </div>
       <div className="text-over-left">
         <h2>

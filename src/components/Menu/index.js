@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 import './style.css';
 import { menuItems } from './menuItems';
-import logo from '../../assets/images/logo.png';
+import logo from '../../assets/images/logo.svg';
 import hamburguer from '../../assets/images/hamburguer.svg';
 import close from '../../assets/images/close.svg';
 import Dropdown from './Dropdown';
@@ -27,14 +27,14 @@ export default class Navbar extends React.Component {
         <nav className="navbar">
           <div className="logo">
             <Link to="/">
-              <img src={logo} alt="Logo" />
+              <img src={logo} alt="Logotipo da beeks" />
             </Link>
           </div>
           <div className="menu-icon" onClick={this.handleShowNavbar}>
             <Link>
               <img
                 src={this.state.showNavbar ? close : hamburguer}
-                alt="Logo"
+                alt="Ícone do menu de navegação"
               />
             </Link>
           </div>

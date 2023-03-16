@@ -1,5 +1,5 @@
 import './style.css';
-import coffee from '../../assets/images/404.svg';
+import pageNotFound from '../../assets/images/404.svg';
 
 export default function NotFound() {
   return (
@@ -7,7 +7,7 @@ export default function NotFound() {
       <div className="nf-banner">
         <h2>Página não encontrada</h2>
         <div className="nf-banner-img">
-          <img src={coffee} />
+          <img src={pageNotFound} alt="Ilustração de um robô com erro" />
         </div>
       </div>
     </>

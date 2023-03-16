@@ -37,6 +37,7 @@ navbar
 
 .logo img {
  width: 120px;
+ height: auto;
 }
 
 .menu-icon {
@@ -44,6 +45,7 @@ navbar
 }
 .menu-icon img {
   width: 40px;
+  height: 40px;
 }
 
 .menu-list {

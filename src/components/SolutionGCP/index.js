@@ -16,7 +16,7 @@ export default function PageGcp() {
       <div className="section-gw">
         <div className="section-gw-content">
           <div className="section-gw-content-img">
-            <img src={googleCloud} />
+            <img src={googleCloud} alt="Logotipo do Google Cloud Platform" />
           </div>
           <div className="section-gw-content-txt">
             <p>
@@ -53,7 +53,10 @@ export default function PageGcp() {
       <div className="section-gw">
         <div className="section-gw-content">
           <div className="section-gw-content-img">
-            <img src={googleCloudServices} />
+            <img
+              src={googleCloudServices}
+              alt="Infográfico com alguns serviços da GCP"
+            />
           </div>
           <div className="section-gw-content-txt">
             <p>
@@ -84,7 +87,10 @@ export default function PageGcp() {
       <div className="section-gw">
         <div className="section-gw-content">
           <div className="section-gw-content-img">
-            <img src={googleDatacenter} />
+            <img
+              src={googleDatacenter}
+              alt="Corredor com varias tubulações de resfriamento dos servidores da GCP"
+            />
           </div>
           <div className="section-gw-content-txt">
             <p>

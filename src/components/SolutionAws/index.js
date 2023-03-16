@@ -16,7 +16,7 @@ export default function PageAws() {
       <div className="section-gw">
         <div className="section-gw-content">
           <div className="section-gw-content-img">
-            <img src={awsLogo} />
+            <img src={awsLogo} alt="Logotipo da AWS" />
           </div>
           <div className="section-gw-content-txt">
             <p>
@@ -53,7 +53,10 @@ export default function PageAws() {
       <div className="section-gw">
         <div className="section-gw-content">
           <div className="section-gw-content-img">
-            <img src={awsServers} />
+            <img
+              src={awsServers}
+              alt="Corredor de um datacenter da AWS com seus servidores"
+            />
           </div>
           <div className="section-gw-content-txt">
             <p>
@@ -78,7 +81,10 @@ export default function PageAws() {
       <div className="section-gw">
         <div className="section-gw-content">
           <div className="section-gw-content-img">
-            <img src={awsServices} />
+            <img
+              src={awsServices}
+              alt="Infográfico contextualizando alguns serviços da AWS"
+            />
           </div>
           <div className="section-gw-content-txt">
             <p>

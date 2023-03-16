@@ -16,7 +16,7 @@ export default function PageGW() {
       <div className="section-gw">
         <div className="section-gw-content">
           <div className="section-gw-content-img">
-            <img src={workplace} />
+            <img src={workplace} alt="Logotipo do Google Workplace" />
           </div>
           <div className="section-gw-content-txt">
             <p>
@@ -35,7 +35,7 @@ export default function PageGW() {
       <div className="section-gw">
         <div className="section-gw-content">
           <div className="section-gw-content-img">
-            <img src={screen} />
+            <img src={screen} alt="Screenshot da tela inicial do Gmail" />
           </div>
           <div className="section-gw-content-txt">
             <p>
@@ -89,7 +89,10 @@ export default function PageGW() {
       <div className="section-gw">
         <div className="section-gw-content">
           <div className="section-gw-content-img">
-            <img src={illustration} />
+            <img
+              src={illustration}
+              alt="Ilustração com os serviços do Google Workplace"
+            />
           </div>
           <div className="section-gw-content-txt">
             <p>

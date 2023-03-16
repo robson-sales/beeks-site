@@ -8,7 +8,10 @@ export default function QuemSomos() {
       <div className="qs">
         <div className="qs-content">
           <div className="qs-content-img">
-            <img src={coffee} />
+            <img
+              src={coffee}
+              alt="Duas pessoas conversando e sorrindo em frente a um notebook"
+            />
             <div className="qs-content-txt">
               <h2>Somos beeks</h2>
               <br />
@@ -21,7 +24,10 @@ export default function QuemSomos() {
             </div>
           </div>
           <div className="qs-content-img">
-            <img src={girlsTech} />
+            <img
+              src={girlsTech}
+              alt="Tres mulheres sentadas numa mesa com seus laptops trabalhando e sorrindo"
+            />
             <div className="qs-content-txt">
               <h2>O que nos move</h2>
               <br />
