@@ -22,11 +22,19 @@ export const menuItems = [
     ],
   },
   {
-    title: 'Produtos',
+    title: 'Nossos serviços',
     url: '',
     subItems: [
       {
-        title: 'App Influencer 🚧',
+        title: 'E-mail personalizado',
+        url: '/servicos/email',
+      },
+      {
+        title: 'Websites',
+        url: '/servicos/websites',
+      },
+      {
+        title: 'App Social 🚧',
         url: '',
       },
     ],
