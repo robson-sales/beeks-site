@@ -1,14 +1,11 @@
 import './style.css';
-import contact from '../../assets/images/contact.webp';
 
 export default function Contato() {
   return (
     <>
       <div className="contact">
         <div className="contact-content">
-          <div className="contact-content-img">
-            <img src={contact} />
-          </div>
+          <div className="contact-content-img"></div>
           <div className="contact-content-txt">
             <h2>Contato</h2>
             <br />
