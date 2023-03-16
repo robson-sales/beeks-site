@@ -1,17 +1,11 @@
 import './style.css';
-import coffee from '../../assets/images/coffee.jpg';
-import girlsTech from '../../assets/images/girls-tech.jpg';
 
 export default function QuemSomos() {
   return (
     <>
       <div className="qs">
         <div className="qs-content">
-          <div className="qs-content-img">
-            <img
-              src={coffee}
-              alt="Duas pessoas conversando e sorrindo em frente a um notebook"
-            />
+          <div className="qs-content-img1">
             <div className="qs-content-txt">
               <h2>Somos beeks</h2>
               <br />
@@ -23,11 +17,7 @@ export default function QuemSomos() {
               </p>
             </div>
           </div>
-          <div className="qs-content-img">
-            <img
-              src={girlsTech}
-              alt="Tres mulheres sentadas numa mesa com seus laptops trabalhando e sorrindo"
-            />
+          <div className="qs-content-img2">
             <div className="qs-content-txt">
               <h2>O que nos move</h2>
               <br />

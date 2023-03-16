@@ -1,5 +1,5 @@
 import './style.css';
-import contact from '../../assets/images/contact.jpg';
+import contact from '../../assets/images/contact.webp';
 
 export default function Contato() {
   return (

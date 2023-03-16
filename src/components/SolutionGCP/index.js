@@ -1,8 +1,8 @@
 import { useNavigate } from 'react-router-dom';
 import '../../Styles/solutionStyle.css';
-import googleCloud from '../../assets/images/google-cloud.png';
-import googleCloudServices from '../../assets/images/google-cloud-services.png';
-import googleDatacenter from '../../assets/images/google-datacenter.png';
+import googleCloud from '../../assets/images/google-cloud.webp';
+import googleCloudServices from '../../assets/images/google-cloud-services.webp';
+import googleDatacenter from '../../assets/images/google-datacenter.webp';
 
 export default function PageGcp() {
   const navigate = useNavigate();

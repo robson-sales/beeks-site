@@ -1,8 +1,8 @@
 import { useNavigate } from 'react-router-dom';
 import '../../Styles/solutionStyle.css';
-import awsLogo from '../../assets/images/aws-logo.png';
-import awsServers from '../../assets/images/aws-server.png';
-import awsServices from '../../assets/images/aws-services.png';
+import awsLogo from '../../assets/images/aws-logo.webp';
+import awsServers from '../../assets/images/aws-server.webp';
+import awsServices from '../../assets/images/aws-services.webp';
 
 export default function PageAws() {
   const navigate = useNavigate();

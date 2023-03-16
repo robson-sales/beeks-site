@@ -14,7 +14,7 @@
   justify-content: center;
 }
 
-.qs-content-img {
+.qs-content-img1 {
   display: flex;
   width: 100%;
   height: 100%;
@@ -22,10 +22,21 @@
   align-items: center;
   justify-content: center;
   overflow:hidden;
+  background-image: url('../../assets/images/coffee.webp');
+  background-size: cover;
+  background-position: center;
 }
-
-.qs-content-img img {
+.qs-content-img2 {
+  display: flex;
+  width: 100%;
   height: 100%;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  overflow:hidden;
+  background-image: url('../../assets/images/girls-tech.webp');
+  background-size: cover;
+  background-position: center;
 }
 
 .qs-content-txt{
@@ -45,22 +56,17 @@
     grid-template-columns: 1fr;
     }
 
-  .qs-content-img {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    overflow:hidden;
-  }
-
-  .qs-content-img img {
-    height: 120%;
-    width: auto;
-  }
-
   .qs-content-txt{
     top: 2rem;
     left: 2rem;
     right: 2rem;
     font-size: 2rem;
+  }
+
+  .qs-content-img1 {
+    background-image: url('../../assets/images/coffee-small.webp');
+  }
+  .qs-content-img2 {
+    background-image: url('../../assets/images/girls-tech-small.webp');
   }
 }

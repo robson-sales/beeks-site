@@ -1,8 +1,8 @@
 import { useNavigate } from 'react-router-dom';
 import '../../Styles/solutionStyle.css';
-import workplace from '../../assets/images/google-workspace.png';
-import screen from '../../assets/images/workspace_motion_still.jpg';
-import illustration from '../../assets/images/google-workspace-illustration.jpg';
+import workplace from '../../assets/images/google-workspace.webp';
+import screen from '../../assets/images/workspace_motion_still.webp';
+import illustration from '../../assets/images/google-workspace-illustration.webp';
 
 export default function PageGW() {
   const navigate = useNavigate();
