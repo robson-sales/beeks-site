@@ -1,5 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
+// HashRouter ao invés de BrowserRouter para funcionar no Netlify
 import { HashRouter, Routes, Route } from 'react-router-dom';
 import './Styles/global.css';
 
