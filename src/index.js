@@ -13,8 +13,8 @@ import NotFound from './components/NotFound';
 import SolutionAws from './components/SolutionAws';
 import SolutionGcp from './components/SolutionGCP';
 import SolutionGW from './components/SolutionGoogleWork';
-import Websites from './components/ProdWebsites';
-import Email from './components/ProdEmail';
+import Websites from './components/PageSites';
+import Email from './components/PageEmail';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(

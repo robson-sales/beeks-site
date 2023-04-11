@@ -3,7 +3,7 @@ import 'react-gallery-carousel/dist/index.css';
 import CarrosselContato from './Carrossel';
 import './style.css';
 
-export default function Websites() {
+export default function Sites() {
   const navigate = useNavigate();
 
   const handleContact = () => {

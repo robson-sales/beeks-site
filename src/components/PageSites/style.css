@@ -1,40 +1,41 @@
-.email-container {
+.site-container {
   width: 100%;
   height: var(--util-height);
   background-image: url('../../assets/images/background.svg');
-  background-size:cover;  display: flex;
+  background-size:cover;
+  display: flex;
   flex-direction: row;
   overflow: hidden;
 }
 
-.email-img {
+.site-img {
   width: 50%;
   height: 100%;
   overflow: hidden;
   display: flex;
 }
 
-.email-img div:nth-child(1) {
+.site-img div:nth-child(1) {
   width: 100%;
   height: 100%;
 }
 
-.email-txt {
+.site-txt {
   width: 50%;
   padding: 6rem;
   overflow: scroll;
 }
 
-.email-txt p {
-  margin-bottom: 10px;
+.site-txt p {
+  margin-bottom: 15px;
   text-align: justify;
 }
 
-.email-txt h2, h4 {
-  margin-bottom: 10px;
+.site-txt h2, h4 {
+  margin-bottom: 15px;
 }
 
-.email-item {
+.site-item {
   display: grid;
   grid-template-columns: 1fr 10fr;
   align-items: center;
@@ -43,50 +44,50 @@
   margin-bottom: 10px;
 }
 
-.email-map {
+.site-map {
   width: auto;
   height: auto;
   padding: 5px;
 }
 
-.email-map iframe {
+.site-map iframe {
   width: 100%;
   min-height: 220px;
   border: none;
   border-radius: 5px;
 }
 
-.email-social {
+.site-social {
   display: flex;
   align-items: center;
   justify-content: left;
 }
 
-.email-social a {
+.site-social a {
   text-decoration: none;
   color: var(--secondary-color);
   padding: 0 10px;
 }
 
-.email-info a {
+.site-info a {
   text-decoration: none;
   color: var(--secondary-color);
 }
 
 @media (max-width: 700px) {
-  .email-container {
+  .site-container {
     width: 100%;
     height: 100%;
     flex-direction: column;
   }
 
-  .email-txt {
+  .site-txt {
     padding: 4rem;
     width: 100%;
     height: 100%;
   }
 
-  .email-img {
+  .site-img {
     width: 100%;
     height: 100%;
   }

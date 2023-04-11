@@ -25,6 +25,14 @@ export default function Email() {
             competitivas.
           </p>
           <p>
+            Qual dos dois e-mails te passa mais confiança:{' '}
+            <strong>
+              <s>pedro@gmail.com</s>
+            </strong>{' '}
+            ou{' '}
+            <strong style={{ color: 'blue' }}>pedro@suaempresa.com.br</strong>?
+          </p>
+          <p>
             É mais fácil de lembrar e reconhecer pelos seus clientes, parceiros
             de negócios e fornecedores. Isso pode ajudar a fortalecer a marca da
             sua empresa e torná-la mais memorável.
