@@ -2,7 +2,7 @@
   width: 100%;
   height: var(--util-height);
   position: relative;
-  background-image: url('../../assets/images/home-banner.webp');
+  background-image: url('../../assets/images/home-banner.png');
   background-size: cover;
   background-position: center;
 }
@@ -26,24 +26,10 @@
   left: 5rem;
   font-weight: 600;
   font-size: 3rem;
-  color: white;
 }
 
-button {
-  width: 300px;
-  height: 40px;
-  background-color: var(--blue-beek);
-  border: none;
-  border-radius: 10px;
-  font-family: 'League Spartan', sans-serif;
-  font-size: 1.7rem;
-  font-weight: bold;
+.text-over-left h2 {
   color: white;
-  cursor: pointer;
-}
-
-button:hover{
-  background-color: blue;
 }
 
 @media (max-width: 1000px) {
@@ -61,16 +47,15 @@ button:hover{
 
 @media (max-width: 700px) {
   .text-over-left {
-    top: 3rem;
+    top: 6rem;
     left: 3rem;
     font-size: 1.7rem;
   }
 
   .banner {
-    background-image: url('../../assets/images/home-banner-small.webp');
+    background-image: url('../../assets/images/home-banner-small.png');
   }
   
-
   .banner-img img {
     height: 100%;
     width: auto;

@@ -20,7 +20,7 @@ export default function Home() {
         </h2>
         <br />
         <br />
-        <button type="submit" onClick={handleContact}>
+        <button type="submit" onClick={handleContact} className="button-action">
           Fale com a gente
         </button>
       </div>

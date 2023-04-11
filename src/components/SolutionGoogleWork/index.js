@@ -108,7 +108,11 @@ export default function PageGW() {
               </strong>
             </p>
             <br />
-            <button type="submit" onClick={handleContact}>
+            <button
+              type="submit"
+              onClick={handleContact}
+              className="button-action"
+            >
               Fale com a gente
             </button>
           </div>

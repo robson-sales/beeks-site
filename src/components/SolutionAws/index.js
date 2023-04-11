@@ -98,7 +98,11 @@ export default function PageAws() {
               <strong>Quer saber mais sobre como a AWS pode te ajudar?</strong>
             </p>
             <br />
-            <button type="submit" onClick={handleContact}>
+            <button
+              type="submit"
+              onClick={handleContact}
+              className="button-action"
+            >
               Fale com a gente
             </button>
           </div>

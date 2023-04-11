@@ -4,6 +4,20 @@ export const menuItems = [
     url: '/quem-somos',
   },
   {
+    title: 'Nossos serviços',
+    url: '',
+    subItems: [
+      {
+        title: 'Websites responsivos',
+        url: '/servicos/websites',
+      },
+      {
+        title: 'E-mail personalizado',
+        url: '/servicos/email',
+      },
+    ],
+  },
+  {
     title: 'Soluções nuvem',
     url: '',
     subItems: [
@@ -18,24 +32,6 @@ export const menuItems = [
       {
         title: 'Google Workplace',
         url: '/solucoes-nuvem/google-workplace',
-      },
-    ],
-  },
-  {
-    title: 'Nossos serviços',
-    url: '',
-    subItems: [
-      {
-        title: 'E-mail personalizado',
-        url: '/servicos/email',
-      },
-      {
-        title: 'Websites',
-        url: '/servicos/websites',
-      },
-      {
-        title: 'App Social 🚧',
-        url: '',
       },
     ],
   },

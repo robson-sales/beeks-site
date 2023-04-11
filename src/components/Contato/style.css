@@ -1,40 +1,37 @@
-.contact {
-  align-items: center;
-  justify-content: center;
-  background-image: url('../../assets/images/background.svg');
-  background-size:cover;
-}
-
-.contact-content {
+.contact-container {
   width: 100%;
   height: var(--util-height);
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  align-items: center;
-  justify-content: center;
-}
-
-.contact-content-txt {
-  width: 100%;
-  height: 100%;
-  padding: 6rem;
+  background-image: url('../../assets/images/background.svg');
+  background-size:cover;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  flex-direction: row;
+  overflow: hidden;
 }
 
-.contact-content-img {
+.contact-img {
+  width: 50%;
+  height: 100%;
+  overflow: hidden;
+  display: flex;
+}
+
+.contact-img div:nth-child(1) {
   width: 100%;
   height: 100%;
-  align-items: center;
-  justify-content: center;
-  background-image: url('../../assets/images/contact.webp');
-  background-size: cover;
-  background-position: center;
 }
 
-.icon {
-  width: 25px;
+.contact-txt {
+  width: 50%;
+  padding: 6rem;
+}
+
+.contact-txt p {
+  margin-bottom: 10px;
+  text-align: justify;
+}
+
+.contact-txt h2, h4 {
+  margin-bottom: 10px;
 }
 
 .contact-item {
@@ -43,19 +40,7 @@
   align-items: center;
   justify-content: center;
   padding: 5px;
-}
-
-.contact-map {
-  width: auto;
-  height: auto;
-  padding: 5px;
-}
-
-.contact-map iframe {
-  width: 100%;
-  min-height: 220px;
-  border: none;
-  border-radius: 5px;
+  margin-bottom: 10px;
 }
 
 .contact-social {
@@ -66,25 +51,30 @@
 
 .contact-social a {
   text-decoration: none;
-  color: var(--secondary-color);
+  color: var(--font-color);
   padding: 0 10px;
 }
 
 .contact-info a {
   text-decoration: none;
-  color: var(--secondary-color);
+  color: var(--font-color);
 }
 
 @media (max-width: 700px) {
-  .contact-content {
+  .contact-container {
     width: 100%;
-    height: auto;
-    grid-template-columns: 1fr;
-    }
+    min-height: var(--util-height);
+    flex-direction: column;
+  }
 
-    .contact-content-img {
-      min-height: 40vh;
-    }
+  .contact-txt {
+    padding: 4rem;
+    width: 100%;
+    height: 100%;
+  }
 
-
+  .contact-img {
+    width: 100%;
+    height: 100%;
+  }
 }

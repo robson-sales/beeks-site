@@ -6,7 +6,7 @@
   align-content: center;
   height: var(--footer-height);
   font-size: 1.3rem;
-  background: var(--blue-beek);
+  background: var(--primary-color);
   color: white;
 }
 

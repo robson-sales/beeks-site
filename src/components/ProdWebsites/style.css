@@ -1,4 +1,4 @@
-.quem-container {
+.site-container {
   width: 100%;
   height: var(--util-height);
   background-image: url('../../assets/images/background.svg');
@@ -8,33 +8,34 @@
   overflow: hidden;
 }
 
-.quem-img {
+.site-img {
   width: 50%;
   height: 100%;
   overflow: hidden;
   display: flex;
 }
 
-.quem-img div:nth-child(1) {
+.site-img div:nth-child(1) {
   width: 100%;
   height: 100%;
 }
 
-.quem-txt {
+.site-txt {
   width: 50%;
   padding: 6rem;
+  overflow: scroll;
 }
 
-.quem-txt p {
+.site-txt p {
   margin-bottom: 10px;
   text-align: justify;
 }
 
-.quem-txt h2, h4 {
+.site-txt h2, h4 {
   margin-bottom: 10px;
 }
 
-.quem-item {
+.site-item {
   display: grid;
   grid-template-columns: 1fr 10fr;
   align-items: center;
@@ -43,50 +44,50 @@
   margin-bottom: 10px;
 }
 
-.quem-map {
+.site-map {
   width: auto;
   height: auto;
   padding: 5px;
 }
 
-.quem-map iframe {
+.site-map iframe {
   width: 100%;
   min-height: 220px;
   border: none;
   border-radius: 5px;
 }
 
-.quem-social {
+.site-social {
   display: flex;
   align-items: center;
   justify-content: left;
 }
 
-.quem-social a {
+.site-social a {
   text-decoration: none;
-  color: var(--font-color);
+  color: var(--secondary-color);
   padding: 0 10px;
 }
 
-.quem-info a {
+.site-info a {
   text-decoration: none;
-  color: var(--font-color);
+  color: var(--secondary-color);
 }
 
 @media (max-width: 700px) {
-  .quem-container {
+  .site-container {
     width: 100%;
-    min-height: var(--util-height);
+    height: 100%;
     flex-direction: column;
   }
 
-  .quem-txt {
+  .site-txt {
     padding: 4rem;
     width: 100%;
     height: 100%;
   }
 
-  .quem-img {
+  .site-img {
     width: 100%;
     height: 100%;
   }
