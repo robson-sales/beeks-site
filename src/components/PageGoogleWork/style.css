@@ -1,4 +1,4 @@
-.quem-container {
+.cloud-container {
   width: 100%;
   height: var(--util-height);
   background-image: url('../../assets/images/background.jpg');
@@ -8,37 +8,40 @@
   overflow: hidden;
 }
 
-.quem-img {
+.cloud-img {
   width: 50%;
   height: 100%;
   overflow: hidden;
   display: flex;
 }
 
-.quem-img div:nth-child(1) {
+.cloud-img div:nth-child(1) {
   width: 100%;
   height: 100%;
 }
 
-.quem-txt {
+.cloud-txt {
   width: 50%;
   padding: 6rem;
+  overflow: scroll;
 }
 
-.quem-txt p {
+.cloud-txt p {
   margin-bottom: 15px;
   text-align: justify;
 }
 
-.quem-txt h2, h4 {
+.cloud-txt li {
+  margin-left: 45px;
+  margin-bottom: 15px;
+  text-align: justify;
+}
+
+.cloud-txt h2, h4 {
   margin-bottom: 15px;
 }
 
-.quem-block {
-  padding: 30px;
-}
-
-.quem-item {
+.cloud-item {
   display: grid;
   grid-template-columns: 1fr 10fr;
   align-items: center;
@@ -47,50 +50,50 @@
   margin-bottom: 10px;
 }
 
-.quem-map {
+.cloud-map {
   width: auto;
   height: auto;
   padding: 5px;
 }
 
-.quem-map iframe {
+.cloud-map iframe {
   width: 100%;
   min-height: 220px;
   border: none;
   border-radius: 5px;
 }
 
-.quem-social {
+.cloud-social {
   display: flex;
   align-items: center;
   justify-content: left;
 }
 
-.quem-social a {
+.cloud-social a {
   text-decoration: none;
-  color: var(--font-color);
+  color: var(--secondary-color);
   padding: 0 10px;
 }
 
-.quem-info a {
+.cloud-info a {
   text-decoration: none;
-  color: var(--font-color);
+  color: var(--secondary-color);
 }
 
 @media (max-width: 700px) {
-  .quem-container {
+  .cloud-container {
     width: 100%;
     min-height: auto;
     flex-direction: column;
   }
 
-  .quem-txt {
+  .cloud-txt {
     padding: 4rem;
     width: 100%;
     height: 100%;
   }
 
-  .quem-img {
+  .cloud-img {
     width: 100%;
     height: 320px;
   }

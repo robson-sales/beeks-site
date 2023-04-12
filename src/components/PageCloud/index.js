@@ -1,6 +1,6 @@
 import { useNavigate } from 'react-router-dom';
 import 'react-gallery-carousel/dist/index.css';
-import CarrosselContato from './Carrossel';
+import CarrosselCloud from './Carrossel';
 import './style.css';
 
 export default function Cloud() {
@@ -14,7 +14,7 @@ export default function Cloud() {
     <>
       <div className="cloud-container">
         <div className="cloud-img">
-          <CarrosselContato />
+          <CarrosselCloud />
         </div>
         <div className="cloud-txt">
           <h2>Gestão de cloud: temos!</h2>

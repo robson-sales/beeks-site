@@ -10,8 +10,8 @@ import Home from './components/Home';
 import Footer from './components/Footer';
 import Contato from './components/Contato';
 import NotFound from './components/NotFound';
-import Cloud from './components/Cloud';
-import SolutionGW from './components/SolutionGoogleWork';
+import Cloud from './components/PageCloud';
+import SolutionGW from './components/PageGoogleWork';
 import Websites from './components/PageSites';
 import Email from './components/PageEmail';
 
