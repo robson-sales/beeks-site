@@ -1,8 +1,8 @@
 .quem-container {
   width: 100%;
   height: var(--util-height);
-  background-image: url('../../assets/images/background.svg');
-  background-size:cover;
+  background-image: url('../../assets/images/background.jpg');
+  background-size: contain;
   display: flex;
   flex-direction: row;
   overflow: hidden;
@@ -76,7 +76,7 @@
 @media (max-width: 700px) {
   .quem-container {
     width: 100%;
-    min-height: var(--util-height);
+    min-height: auto;
     flex-direction: column;
   }
 
@@ -88,6 +88,6 @@
 
   .quem-img {
     width: 100%;
-    height: 100%;
+    height: 320px;
   }
 }

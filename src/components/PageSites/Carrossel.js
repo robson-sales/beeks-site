@@ -1,12 +1,12 @@
 import Carousel from 'react-gallery-carousel';
 import 'react-gallery-carousel/dist/index.css';
 
-import site1 from '../../assets/images/site01.webp';
-import site2 from '../../assets/images/site02.webp';
-import site3 from '../../assets/images/site03.webp';
-import site4 from '../../assets/images/site04.webp';
-import site5 from '../../assets/images/site05.webp';
-import site6 from '../../assets/images/site06.webp';
+import site1 from '../../assets/images/site01.jpg';
+import site2 from '../../assets/images/site02.jpg';
+import site3 from '../../assets/images/site03.jpg';
+import site4 from '../../assets/images/site04.jpg';
+import site5 from '../../assets/images/site05.jpg';
+import site6 from '../../assets/images/site06.jpg';
 
 export default function CarrosselContato() {
   const altTxt = 'Ilustrações de websites';

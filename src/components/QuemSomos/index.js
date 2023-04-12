@@ -14,10 +14,14 @@ export default function QuemSomos() {
           <p>
             A beeks nasceu da nosso jeito inconformado de enxergar o mundo.
             Entendemos que a tecnologia está aqui para facilitar a vida de
-            empresas e pessoas, e não ser um bicho de sete cabeças. Tudo deveria
-            ser tão simples quanto mandar uma mensagem no WhatsApp.
+            empresas e pessoas, e não ser um bicho de sete cabeças.
           </p>
-
+          <p>
+            <strong>
+              Tudo deveria ser tão simples quanto mandar uma mensagem no
+              WhatsApp.
+            </strong>
+          </p>
           <h2>O que nos move</h2>
           <p>
             Queremos te ajudar a alcançar seu potencial máximo, através de

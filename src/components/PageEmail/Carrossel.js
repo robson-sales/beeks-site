@@ -1,10 +1,10 @@
 import Carousel from 'react-gallery-carousel';
 import 'react-gallery-carousel/dist/index.css';
 
-import email1 from '../../assets/images/email01.png';
-import email2 from '../../assets/images/email02.png';
-import email3 from '../../assets/images/email03.png';
-import email4 from '../../assets/images/email04.png';
+import email1 from '../../assets/images/email01.jpg';
+import email2 from '../../assets/images/email02.jpg';
+import email3 from '../../assets/images/email03.jpg';
+import email4 from '../../assets/images/email04.jpg';
 
 export default function CarrosselContato() {
   const altTxt = 'Ilustrações de e-mail';
