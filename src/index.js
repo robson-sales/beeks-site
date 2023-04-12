@@ -10,8 +10,7 @@ import Home from './components/Home';
 import Footer from './components/Footer';
 import Contato from './components/Contato';
 import NotFound from './components/NotFound';
-import SolutionAws from './components/SolutionAws';
-import SolutionGcp from './components/SolutionGCP';
+import Cloud from './components/Cloud';
 import SolutionGW from './components/SolutionGoogleWork';
 import Websites from './components/PageSites';
 import Email from './components/PageEmail';
@@ -24,8 +23,7 @@ root.render(
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/quem-somos" element={<QuemSomos />} />
-        <Route path="/solucoes-nuvem/gcp" element={<SolutionGcp />} />
-        <Route path="/solucoes-nuvem/aws" element={<SolutionAws />} />
+        <Route path="/solucoes-nuvem/cloud" element={<Cloud />} />
         <Route
           path="/solucoes-nuvem/google-workplace"
           element={<SolutionGW />}

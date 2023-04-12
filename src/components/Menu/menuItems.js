@@ -22,12 +22,8 @@ export const menuItems = [
     url: '',
     subItems: [
       {
-        title: 'AWS',
-        url: '/solucoes-nuvem/aws',
-      },
-      {
-        title: 'Google Cloud',
-        url: '/solucoes-nuvem/gcp',
+        title: 'Cloud',
+        url: '/solucoes-nuvem/cloud',
       },
       {
         title: 'Google Workplace',
