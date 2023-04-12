@@ -22,7 +22,7 @@ export const menuItems = [
     url: '',
     subItems: [
       {
-        title: 'Cloud',
+        title: 'Cloud Computing',
         url: '/solucoes-nuvem/cloud',
       },
       {
