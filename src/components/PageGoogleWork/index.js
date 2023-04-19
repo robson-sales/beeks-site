@@ -1,8 +1,13 @@
+import { useEffect } from 'react';
 import 'react-gallery-carousel/dist/index.css';
 import CarrosselGw from './Carrossel';
 import './style.css';
 
 export default function Cloud() {
+  useEffect(() => {
+    document.title = 'beeks | Google Workspace';
+  }, []);
+
   return (
     <>
       <div className="cloud-container">

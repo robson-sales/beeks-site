@@ -1,8 +1,13 @@
+import { useEffect } from 'react';
 import 'react-gallery-carousel/dist/index.css';
 import CarrosselContato from './Carrossel';
 import './style.css';
 
 export default function QuemSomos() {
+  useEffect(() => {
+    document.title = 'beeks | Quem somos';
+  }, []);
+
   return (
     <>
       <div className="quem-container">

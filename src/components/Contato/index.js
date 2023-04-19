@@ -1,9 +1,14 @@
+import { useEffect } from 'react';
 import { BsMailbox, BsInstagram, BsWhatsapp } from 'react-icons/bs';
 import 'react-gallery-carousel/dist/index.css';
 import CarrosselContato from './Carrossel';
 import './style.css';
 
 export default function Contato() {
+  useEffect(() => {
+    document.title = 'beeks | Contato';
+  }, []);
+
   return (
     <>
       <div className="contact-container">

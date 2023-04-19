@@ -1,3 +1,4 @@
+import { useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import './style.css';
 
@@ -7,6 +8,10 @@ export default function Home() {
   const handleContact = () => {
     navigate('/contato');
   };
+
+  useEffect(() => {
+    document.title = 'beeks | Soluções Digitais';
+  }, []);
 
   return (
     <div className="banner">

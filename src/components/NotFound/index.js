@@ -1,7 +1,12 @@
+import { useEffect } from 'react';
 import './style.css';
 import pageNotFound from '../../assets/images/404.svg';
 
 export default function NotFound() {
+  useEffect(() => {
+    document.title = 'beeks | Página não encontrada';
+  }, []);
+
   return (
     <>
       <div className="nf-banner">

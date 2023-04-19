@@ -1,8 +1,13 @@
+import { useEffect } from 'react';
 import 'react-gallery-carousel/dist/index.css';
 import CarrosselEmail from './Carrossel';
 import './style.css';
 
 export default function Email() {
+  useEffect(() => {
+    document.title = 'beeks | E-mail personalizado';
+  }, []);
+
   return (
     <>
       <div className="email-container">
