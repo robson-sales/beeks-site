@@ -68,7 +68,7 @@ navbar
 }
 
 .menu-item-link {
-  font-size: 2rem;
+  font-size: 1.75rem;
   font-weight: 400;
   color: var(--font-color);
   text-decoration: none;
@@ -106,7 +106,7 @@ navbar
 
 .submenu-list {
   position: absolute;
-  top: calc(var(--menu-height) - 10px);
+  top: calc(var(--menu-height) - 15px);
   left: 0;
   width: 100%;
   height: auto;

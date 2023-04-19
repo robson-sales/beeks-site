@@ -1,15 +1,8 @@
-import { useNavigate } from 'react-router-dom';
 import 'react-gallery-carousel/dist/index.css';
 import CarrosselEmail from './Carrossel';
 import './style.css';
 
 export default function Email() {
-  const navigate = useNavigate();
-
-  const handleContact = () => {
-    navigate('/contato');
-  };
-
   return (
     <>
       <div className="email-container">
@@ -27,10 +20,10 @@ export default function Email() {
           <p>
             Qual dos dois e-mails te passa mais confiança:{' '}
             <strong>
-              <s>pedro@gmail.com</s>
+              <s>pedro_graficaex@gmail.com</s>
             </strong>{' '}
-            ou{' '}
-            <strong style={{ color: 'blue' }}>pedro@suaempresa.com.br</strong>?
+            ou <strong style={{ color: 'blue' }}>pedro@graficaex.com.br</strong>
+            ?
           </p>
           <p>
             É mais fácil de lembrar e reconhecer pelos seus clientes, parceiros
@@ -50,13 +43,6 @@ export default function Email() {
             parceiros de negócios, o que leva a mais oportunidades de negócios e
             maior crescimento para sua empresa.
           </p>
-          <button
-            type="submit"
-            onClick={handleContact}
-            className="button-action"
-          >
-            Fale com a gente
-          </button>
         </div>
       </div>
     </>

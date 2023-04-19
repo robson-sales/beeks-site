@@ -1,15 +1,8 @@
-import { useNavigate } from 'react-router-dom';
 import 'react-gallery-carousel/dist/index.css';
 import CarrosselCloud from './Carrossel';
 import './style.css';
 
 export default function Cloud() {
-  const navigate = useNavigate();
-
-  const handleContact = () => {
-    navigate('/contato');
-  };
-
   return (
     <>
       <div className="cloud-container">
@@ -45,13 +38,6 @@ export default function Cloud() {
             para gerenciamento de nuvem, fale com a gente. Estamos prontos para
             te mostrar como a nuvem pode ajudar a impulsionar seus negócios!
           </p>
-          <button
-            type="submit"
-            onClick={handleContact}
-            className="button-action"
-          >
-            Fale com a gente
-          </button>
         </div>
       </div>
     </>

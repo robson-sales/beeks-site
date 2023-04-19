@@ -1,15 +1,8 @@
-import { useNavigate } from 'react-router-dom';
 import 'react-gallery-carousel/dist/index.css';
 import CarrosselGw from './Carrossel';
 import './style.css';
 
 export default function Cloud() {
-  const navigate = useNavigate();
-
-  const handleContact = () => {
-    navigate('/contato');
-  };
-
   return (
     <>
       <div className="cloud-container">
@@ -59,13 +52,6 @@ export default function Cloud() {
             Fale agora mesmo com a beeks e comece a transformar a sua empresa
             com o Google Workplace!
           </p>
-          <button
-            type="submit"
-            onClick={handleContact}
-            className="button-action"
-          >
-            Fale com a gente
-          </button>
         </div>
       </div>
     </>

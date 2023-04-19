@@ -1,15 +1,8 @@
-import { useNavigate } from 'react-router-dom';
 import 'react-gallery-carousel/dist/index.css';
 import CarrosselContato from './Carrossel';
 import './style.css';
 
 export default function Sites() {
-  const navigate = useNavigate();
-
-  const handleContact = () => {
-    navigate('/contato');
-  };
-
   return (
     <>
       <div className="site-container">
@@ -52,13 +45,6 @@ export default function Sites() {
             de oferecer diversas vantagens competitivas, como maior alcance,
             comunicação com clientes, vendas online e muito mais.
           </p>
-          <button
-            type="submit"
-            onClick={handleContact}
-            className="button-action"
-          >
-            Fale com a gente
-          </button>
         </div>
       </div>
     </>

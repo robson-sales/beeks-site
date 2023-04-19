@@ -45,12 +45,12 @@ export default function Contato() {
               </div>
               <div className="contact-info">
                 <a
-                  href="https://api.whatsapp.com/send?phone=5511"
+                  href="https://api.whatsapp.com/send?phone=5511973667727"
                   target="_blank"
                   rel="noreferrer"
                   aria-label="Link para nosso WhatsApp"
                 >
-                  Em breve
+                  (11) 97366-7727
                 </a>
               </div>
             </div>
