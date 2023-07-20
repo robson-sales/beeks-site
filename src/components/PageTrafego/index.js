@@ -1,6 +1,6 @@
 import { useEffect } from 'react';
 import 'react-gallery-carousel/dist/index.css';
-import CarrosselEmail from './Carrossel';
+import CarrosselTrafego from './Carrossel';
 import './style.css';
 
 export default function Trafego() {
@@ -12,7 +12,7 @@ export default function Trafego() {
     <>
       <div className="email-container">
         <div className="email-img">
-          <CarrosselEmail />
+          <CarrosselTrafego />
         </div>
         <div className="email-txt">
           <h2>Gestão de tráfego</h2>

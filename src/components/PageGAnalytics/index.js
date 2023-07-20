@@ -1,6 +1,6 @@
 import { useEffect } from 'react';
 import 'react-gallery-carousel/dist/index.css';
-import CarrosselEmail from './Carrossel';
+import CarrosselAnalytics from './Carrossel';
 import './style.css';
 
 export default function GoogleAnalytics() {
@@ -12,7 +12,7 @@ export default function GoogleAnalytics() {
     <>
       <div className="email-container">
         <div className="email-img">
-          <CarrosselEmail />
+          <CarrosselAnalytics />
         </div>
         <div className="email-txt">
           <h2>Google Analytics</h2>

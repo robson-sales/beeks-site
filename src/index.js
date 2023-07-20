@@ -17,6 +17,8 @@ import Email from './components/PageEmail';
 import Trafego from './components/PageTrafego';
 import GoogleAds from './components/PageGoogleAds';
 import GoogleAnalytics from './components/PageGAnalytics';
+import GoogleMeuNegocio from './components/PageMeuNegocio';
+import MetaAds from './components/PageMetaAds';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -28,6 +30,12 @@ root.render(
         <Route path="/quem-somos" element={<QuemSomos />} />
         <Route path="/solucoes-nuvem/cloud" element={<Cloud />} />
         <Route path="/solucoes-nuvem/google-ads" element={<GoogleAds />} />
+        <Route path="/solucoes-nuvem/google-ads" element={<GoogleAds />} />
+        <Route path="/solucoes-nuvem/meta-ads" element={<MetaAds />} />
+        <Route
+          path="/solucoes-nuvem/google-negocio"
+          element={<GoogleMeuNegocio />}
+        />
         <Route
           path="/solucoes-nuvem/google-analytics"
           element={<GoogleAnalytics />}
