@@ -4,11 +4,11 @@ export const menuItems = [
     url: '/quem-somos',
   },
   {
-    title: 'Nossos serviços',
+    title: 'Nossos Serviços',
     url: '',
     subItems: [
       {
-        title: 'Websites responsivos',
+        title: 'Sites responsivos',
         url: '/servicos/websites',
       },
       {
@@ -18,7 +18,7 @@ export const menuItems = [
     ],
   },
   {
-    title: 'Soluções nuvem',
+    title: 'Ferramentas',
     url: '',
     subItems: [
       {
