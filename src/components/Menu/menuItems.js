@@ -8,12 +8,16 @@ export const menuItems = [
     url: '',
     subItems: [
       {
-        title: 'Sites responsivos',
-        url: '/servicos/websites',
-      },
-      {
         title: 'E-mail personalizado',
         url: '/servicos/email',
+      },
+      {
+        title: 'Gestão de tráfego',
+        url: '/servicos/trafego',
+      },
+      {
+        title: 'Sites responsivos',
+        url: '/servicos/websites',
       },
     ],
   },
@@ -26,8 +30,24 @@ export const menuItems = [
         url: '/solucoes-nuvem/cloud',
       },
       {
+        title: 'Google Ads',
+        url: '/solucoes-nuvem/google-ads',
+      },
+      {
+        title: 'Google Analytics',
+        url: '/solucoes-nuvem/google-analytics',
+      },
+      {
+        title: 'Google Meu Negócio',
+        url: '/solucoes-nuvem/google-negocio',
+      },
+      {
         title: 'Google Workplace',
         url: '/solucoes-nuvem/google-workplace',
+      },
+      {
+        title: 'Meta Ads',
+        url: '/solucoes-nuvem/meta-ads',
       },
     ],
   },

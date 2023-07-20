@@ -14,6 +14,8 @@ import Cloud from './components/PageCloud';
 import SolutionGW from './components/PageGoogleWork';
 import Websites from './components/PageSites';
 import Email from './components/PageEmail';
+import Trafego from './components/PageTrafego';
+import GoogleAds from './components/PageGoogleAds';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -24,13 +26,15 @@ root.render(
         <Route path="/" element={<Home />} />
         <Route path="/quem-somos" element={<QuemSomos />} />
         <Route path="/solucoes-nuvem/cloud" element={<Cloud />} />
+        <Route path="/solucoes-nuvem/google-ads" element={<GoogleAds />} />
         <Route
           path="/solucoes-nuvem/google-workplace"
           element={<SolutionGW />}
         />
         <Route path="/contato" element={<Contato />} />
-        <Route path="/servicos/websites" element={<Websites />} />
         <Route path="/servicos/email" element={<Email />} />
+        <Route path="/servicos/trafego" element={<Trafego />} />
+        <Route path="/servicos/websites" element={<Websites />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
       <Footer />
