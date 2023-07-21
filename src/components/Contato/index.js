@@ -1,5 +1,8 @@
 import { useEffect } from 'react';
-import { BsMailbox, BsInstagram, BsWhatsapp } from 'react-icons/bs';
+// prettier-ignore
+import {
+  BsMailbox, BsInstagram, BsWhatsapp, BsLinkedin
+} from 'react-icons/bs';
 import 'react-gallery-carousel/dist/index.css';
 import CarrosselContato from './Carrossel';
 import './style.css';
@@ -33,6 +36,13 @@ export default function Contato() {
               rel="noreferrer"
             >
               <BsInstagram style={{ color: 'magenta' }} />
+            </a>
+            <a
+              href="https://www.linkedin.com/company/somosbeeks/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <BsLinkedin style={{ color: 'blue' }} />
             </a>
           </div>
           <div className="contact-data">

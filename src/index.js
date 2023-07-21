@@ -19,6 +19,7 @@ import GoogleAds from './components/PageGoogleAds';
 import GoogleAnalytics from './components/PageGAnalytics';
 import GoogleMeuNegocio from './components/PageMeuNegocio';
 import MetaAds from './components/PageMetaAds';
+import Whatsapp from './components/Whatsapp';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -50,6 +51,7 @@ root.render(
         <Route path="/servicos/websites" element={<Websites />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
+      <Whatsapp />
       <Footer />
     </HashRouter>
   </React.StrictMode>
