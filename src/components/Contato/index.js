@@ -51,7 +51,7 @@ export default function Contato() {
                 <BsMailbox />
               </div>
               <div className="contact-info">
-                <a href="mailto:contato@beeks.com.br">contato@beeks.com.br</a>
+                <a href="mailto:robson@beeks.com.br">robson@beeks.com.br</a>
               </div>
             </div>
             <div className="contact-item">
