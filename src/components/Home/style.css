@@ -35,7 +35,7 @@
 .image-right {
   width: 60%;
   height: 100%;
-  background-image: url('../../assets/images/banner.jpg');
+  background-image: url('../../assets/images/banner.webp');
   background-size: cover;
   background-position: center;
 }
@@ -44,7 +44,7 @@
 .image-expert {
   width: 60%;
   height: 100%;
-  background-image: url('../../assets/images/expert.jpg');
+  background-image: url('../../assets/images/expert.webp');
   background-size: cover;
   background-position: center;
 }
@@ -166,18 +166,18 @@
 }
 
 .gads {
-  background-image: url('../../assets/images/gads.png');
+  background-image: url('../../assets/images/gads.webp');
   background-size: cover;
   background-position: center;
 }
 
 .analytics {
-  background-image: url('../../assets/images/analytics.png');
+  background-image: url('../../assets/images/analytics.webp');
   background-size: cover;
   background-position: center;
 }
 .metaads {
-  background-image: url('../../assets/images/metads-breve.png');
+  background-image: url('../../assets/images/metads-breve.webp');
   background-size: cover;
   background-position: center;
 }
