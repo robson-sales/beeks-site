@@ -1,38 +1,56 @@
+/* Seção Banner ------------------------- */
 .banner {
   width: 100%;
   height: 600px;
-  position: relative;
-  background-image: url('../../assets/images/home-banner.png');
+  padding: 0px 0px 0px 0px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  background-color: black;
+}
+
+.text-black {
+  width: 40%;
+  padding: 40px;
+  background-color: black;
+  color: white;
+}
+
+.text-black p {
+  font-weight: 400;
+  font-size: 1.5rem;
+}
+
+.text-black h2 {
+  font-weight: 800;
+  font-size: 3.7rem;
+}
+
+.text-black h3 {
+  font-weight: 400;
+  font-size: 1.8rem;
+}
+
+.image-right {
+  width: 60%;
+  height: 100%;
+  background-image: url('../../assets/images/banner.jpg');
   background-size: cover;
   background-position: center;
 }
 
-.banner-img {
-  display: flex;
-  width: 100%;
+/* Seção Expert ------------------------- */
+.image-expert {
+  width: 60%;
   height: 100%;
-  align-items: center;
-  justify-content: center;
-  overflow:hidden;
+  background-image: url('../../assets/images/expert.jpg');
+  background-size: cover;
+  background-position: center;
 }
 
-.banner-img img {
-  width: 100%;
-}
-
-.text-over-left {
-  position: absolute;
-  top: 5rem;
-  left: 5rem;
-  font-weight: 600;
-  font-size: 3rem;
-}
-
-.text-over-left h2 {
-  color: white;
-}
-
-.funil {
+/* Seção Método ------------------------- */
+.metodo {
   width: 100%;
   height: 400px;
   padding: 20px;
@@ -40,94 +58,194 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  background-color: #eee;
 }
 
-.funil h2 {
+.metodo p {
+  font-weight: 400;
+  font-size: 1.5rem;
+}
+
+.metodo h2 {
+  font-weight: 800;
+  font-size: 3.7rem;
   text-align: center;
+  color: var(--primary-color);
   padding-bottom: 15px;
 }
 
-.funil-cards {
+.metodo-cards {
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.funil-box {
-  width: 400px;
+.metodo-box {
+  width: 190px;
   height: 250px;
   margin: 10px;
   padding: 20px;
   border-radius: 20px;
-  box-shadow: 2px 2px 8px #a9a9a9;
+  background-color: white;
+  box-shadow: 2px 2px 3px #a9a9a9;
 }
 
-.funil-box h3 {
+.metodo-box h3 {
+  font-weight: 800;
+  font-size: 1.8rem;
   padding-bottom: 10px;
 }
 
-.funil-box p {
+/* Seção Certificações ------------------------- */
+.bg-primary-color {
+  width: 100%;
+  height: auto;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  background-color: var(--primary-color);
+}
+
+.bg-primary-color p {
+  font-weight: 400;
+  font-size: 1.5rem;
+}
+
+.bg-primary-color h2 {
+  font-weight: 800;
+  font-size: 3.7rem;
+  text-align: center;
+  padding-bottom: 15px;
+}
+
+.bg-primary-color h3 {
+  padding-bottom: 15px;
+}
+
+.bg-primary-color-cards {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.bg-primary-color-box {
+  width: 100px;
+  height: 100px;
+  margin: 10px;
+  padding: 20px;
+  border-radius: 100px;
+  background-color: white;
+  box-shadow: 2px 2px 3px #a9a9a9;
+}
+
+.bg-primary-color-box h3 {
+  font-weight: 800;
+  font-size: 1.8rem;
+  padding-bottom: 10px;
+}
+
+.bg-primary-color-box p {
+  font-weight: 400;
+  font-size: 1.5rem;
+  color: white;
   padding-top: 10px;
   padding-bottom: 10px;
 }
 
-.conhecimento {
-  background-image: url('../../assets/images/conhecimento.png');
+.bg-primary-color a {
+  color: white;
+  text-decoration: none;
+}
+
+.bg-prim-icons a {
+  padding: 10px;
+  font-size: 1.8rem;
+}
+
+.gads {
+  background-image: url('../../assets/images/gads.png');
   background-size: cover;
   background-position: center;
 }
 
-.consi-conver {
-  background-image: url('../../assets/images/consi-conver.png');
+.analytics {
+  background-image: url('../../assets/images/analytics.png');
+  background-size: cover;
+  background-position: center;
+}
+.metaads {
+  background-image: url('../../assets/images/metads-breve.png');
   background-size: cover;
   background-position: center;
 }
 
-.ferramentas {
-  background-image: url('../../assets/images/ferramentas.png');
-  background-size: cover;
-  background-position: center;
+/* Botão CTA ------------------------- */
+.button-action {
+  width: 200px;
+  height: 40px;
+  background-color: var(--primary-color);
+  border: none;
+  border-radius: 10px;
+  font-size: 1.5rem;
+  font-weight: 200;
+  color: white;
+  cursor: pointer;
 }
 
+.button-action:hover {
+  background-color: #9A00FF;
+}
 
+/* Ajuste para telas 1000px ------------------------- */
 @media (max-width: 1000px) {
-  .text-over-left {
-    top: 4.5rem;
-    left: 4.5rem;
-    font-size: 2rem;
-  }
-
-  .banner-img img {
-    height: 100%;
-    width: auto;
-  }
-
-  .funil {
+  .metodo {
     height: auto;
   }
 
-  .funil-cards {
+  .metodo-cards {
     flex-direction: column;
+  }
+
+  .metodo-box {
+    width: 100%;
+    height: auto;
   }
 }
 
+/* Ajuste para telas 700px ------------------------- */
 @media (max-width: 700px) {
-  .text-over-left {
-    top: 6rem;
-    left: 3rem;
-    font-size: 1.7rem;
+  .banner {
+    padding: 0px;
+    flex-direction: column;
   }
 
-  .banner {
-    background-image: url('../../assets/images/home-banner-small.png');
+  .image-right {
+    width: 100%;
+    height: 500px;
+  }
+
+  .text-black {
+    padding: 30px;
+    width: auto;
+    font-size: 1.5rem;
+  }
+
+  .text-black h2 {
+    font-size: 2.7rem;
   }
   
-  .banner-img img {
-    height: 100%;
-    width: auto;
+  .text-black h3 {
+    font-size: 1.5rem;
   }
 
-  .funil-box {
-    width: 100%;
+  .metodo h2 {
+    font-size: 2.7rem;
+  }
+
+  .bg-primary-color h2 {
+    font-size: 2.7rem;
   }
 }

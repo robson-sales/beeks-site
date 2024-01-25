@@ -10,7 +10,7 @@ export default function Whatsapp() {
         rel="noreferrer"
         aria-label="Link para acessar nosso WhatsApp de contato"
       >
-        <BsWhatsapp style={{ color: 'white' }} />
+        <BsWhatsapp color="white" fontSize="38px" />
       </a>
     </div>
   );
