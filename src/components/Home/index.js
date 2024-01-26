@@ -1,16 +1,14 @@
 import { useEffect } from 'react';
-import { useNavigate } from 'react-router-dom';
 // eslint-disable-next-line object-curly-newline
-import { BsInstagram, BsLinkedin, BsFacebook } from 'react-icons/bs';
+import {
+  BsInstagram,
+  BsLinkedin,
+  BsFacebook,
+  BsWhatsapp,
+} from 'react-icons/bs';
 import './style.css';
 
 export default function Home() {
-  const navigate = useNavigate();
-
-  const handleContact = () => {
-    navigate('/contato');
-  };
-
   useEffect(() => {
     document.title = 'beeks | Soluções Digitais';
   }, []);
@@ -31,13 +29,17 @@ export default function Home() {
           </h3>
           <br />
           <br />
-          <button
-            type="submit"
-            onClick={handleContact}
-            className="button-action"
+          <a
+            href="https://api.whatsapp.com/send?phone=5511973667727"
+            target="_blank"
+            rel="noreferrer"
+            aria-label="Link para acessar nosso WhatsApp de contato"
           >
-            Fale com o especialista
-          </button>
+            <button type="submit" className="button-action">
+              <BsWhatsapp color="white" fontSize="12px" /> Fale com o
+              especialista
+            </button>
+          </a>
         </div>
         <div className="image-right"></div>
       </div>
@@ -113,13 +115,17 @@ export default function Home() {
           </h3>
           <br />
           <br />
-          <button
-            type="submit"
-            onClick={handleContact}
-            className="button-action"
+          <a
+            href="https://api.whatsapp.com/send?phone=5511973667727"
+            target="_blank"
+            rel="noreferrer"
+            aria-label="Link para acessar nosso WhatsApp de contato"
           >
-            Fale com o especialista
-          </button>
+            <button type="submit" className="button-action">
+              <BsWhatsapp color="white" fontSize="12px" /> Fale com o
+              especialista
+            </button>
+          </a>
         </div>
       </div>
       {/* Seção Onde estamos */}

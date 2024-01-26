@@ -1,33 +1,30 @@
 import React from 'react';
-import { Link, useNavigate } from 'react-router-dom';
+import { BsWhatsapp } from 'react-icons/bs';
 
 import './style.css';
 import logo from '../../assets/images/logo.svg';
 
 export default function Navbar() {
-  const navigate = useNavigate();
-
-  const handleContact = () => {
-    navigate('/contato');
-  };
   return (
     <>
       <nav className="navbar">
         <div className="logo">
-          <Link to="/">
-            <img src={logo} alt="Logotipo da beeks" />
-          </Link>
+          <img src={logo} alt="Logotipo da beeks" />
         </div>
         <div className={'menu-container'}>
           <ul className="menu-list">
             <li>
-              <button
-                type="submit"
-                onClick={handleContact}
-                className="button-action-menu"
+              <a
+                href="https://api.whatsapp.com/send?phone=5511973667727"
+                target="_blank"
+                rel="noreferrer"
+                aria-label="Link para acessar nosso WhatsApp de contato"
               >
-                Fale com o especialista
-              </button>
+                <button type="submit" className="button-action-menu">
+                  <BsWhatsapp color="white" fontSize="12px" /> Fale com o
+                  especialista
+                </button>
+              </a>
             </li>
           </ul>
         </div>

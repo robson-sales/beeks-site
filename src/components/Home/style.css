@@ -201,6 +201,10 @@
 
 /* Ajuste para telas 1000px ------------------------- */
 @media (max-width: 1000px) {
+  .image-right {
+    background-image: url('../../assets/images/banner-small.webp');
+  }
+
   .metodo {
     height: auto;
   }
